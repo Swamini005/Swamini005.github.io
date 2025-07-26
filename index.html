@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Swamini Yesade | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Hello, I'm <span class="highlight"> Swamini Yesade </span></h1>
+    <p>Web Developer | Student | Tech Enthusiast</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a passionate developer who enjoys building web applications and solving real-world problems with code.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Project 1: Email Classifier</h3>
+      <p>A simple webapp built using Streamlit to classify your emails into spam or ham. Made using Simple Bayes' Theorem.</p>
+      <a href="https://github.com/Swamini005/email-classifier" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project">
+      <h3>Project 2: Daily Journal</h3>
+      <p>A Simple webapp built using Flask to note down your daily activities.</p>
+      <a href="https://github.com/Swamini005/Daily-Journal" target="_blank">View on GitHub</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="handleSubmit(event)">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="responseMsg"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Swamini Yesade • Connect on 
+      <a href="https://www.linkedin.com/in/yourname" target="_blank">LinkedIn</a> • 
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
